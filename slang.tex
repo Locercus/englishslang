@@ -1,0 +1,112 @@
+\documentclass[a5paper,10pt]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[a5paper]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+
+\title{\Huge \textbf{English Slang in Every Language Imaginable} \\ \huge Literal Translations of Slang for the Youth of the Globalised World}
+\date{}
+\author{By too many people to mention on this cover}
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\LARGE}
+
+\newenvironment{slang}{
+    \begin{multicols*}{2}\footnotesize
+}{
+    \end{multicols*}
+}
+
+\newcommand{\slangw}[4]{%
+\noindent \textbf{#1 \ifthenelse{\equal{#2}{}}{}{ (#2)}} \enspace #3 \ifthenelse{\equal{#4}{}}{}{ (#4)} \\
+}
+
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{Thanks to}
+\begin{tabularx}{\textwidth}{Xl}
+Dutch & Bas \\
+French & Bas \& Franz \\
+Spanish & Juan \\
+Book design, Danish \& Espe\-ranto & Jonatan Nordentoft
+\end{tabularx}
+
+\chapter{English to Danish}
+\begin{slang}
+\slangw{afaik}{as far as I know}{svsj}{så vidst som jeg ved}
+\slangw{afk}{away from keyboard}{vft}{væk fra tastaturet}
+\slangw{asshat}{}{røvhat}{}
+\slangw{atm}{at the moment}{vøj}{ved øjeblikket}
+\slangw{bbl}{be back later}{ets}{er tilbage senere}
+\slangw{brb}{be right back}{est}{er straks tilbage}
+\slangw{btw}{by the way}{vv}{ved vejen}
+\slangw{cba}{can't be arsed}{kibb}{kan ikke blive bagdelet}
+\slangw{dank memes}{}{fugtige memer}{}
+\slangw{ffs}{for fucks sake}{fks}{for knepperiets skyld}
+\slangw{fml}{fuck my life}{kml}{knep mit liv}
+\slangw{ftw}{for the win}{fs}{for sejren}
+\slangw{ftw}{fuck the world}{kv}{knep verden}
+\slangw{fuck}{}{knep}{}
+\slangw{fwiw}{for what it's worth}{fvdv}{for hvad det er værd}
+\slangw{fyi}{for your information}{tdi}{til din information}
+\slangw{gg}{good game}{gs}{godt spillet}
+\slangw{gtg}{got to go}{bntag}{bliver nødt til at gå}
+\slangw{hbd}{happy birthday}{tmf}{tillykke med fødselsdagen}
+\slangw{I'm fucked}{}{jeg er tilkneppet}{}
+\slangw{idek}{I don't even know}{dvjie}{det ved jeg ikke engang}
+\slangw{idk}{I don't know}{dvji}{det ved jeg ikke}
+\slangw{iirc}{if I recall correctly}{hjmdr}{hvis jeg mindes det rigtigt}
+\slangw{imho}{in my honest opinion}{enæm}{efter min ærlige mening}
+\slangw{imo}{in my opinion}{emm}{efter min mening}
+\slangw{jk}{just kidding}{sb}{spøger bare}
+\slangw{lmao}{laughing my ass off}{gmra}{griner min røv af}
+\slangw{lmfao}{laughing my fucking ass off}{gmkra}{griner min kneppende røv af}
+\slangw{lol}{laughing out loud}{gh}{griner højlydt}
+\slangw{np}{no problem}{ip}{intet pro\-blem}
+\slangw{nvm}{nevermind}{dlm}{det er lige meget}
+\end{slang}
+\newpage
+\begin{slang}
+\slangw{omfg}{oh my fucking God}{åmkg}{åh min kneppende Gud}
+\slangw{omg}{oh my God}{åmg}{åh min Gud}
+\slangw{omgwtfbbq}{oh my God what the fuck barbecue}{åmghkbbq}{åh min Gud hvad ved knepperiet barbecue}
+\slangw{rn}{right now}{ln}{lige nu}
+\slangw{rofl}{rolling on the floor laughing}{rpgg}{ruller på gulvet og griner}
+\slangw{roflcopter}{rolling on the floor laughing-copter}{rpggk}{ruller på gulvet og griner-kopter}
+\slangw{roflmao}{rolling on the floor laughing my ass off}{rpggmra}{ruller på gulvet og griner min røv af}
+\slangw{shithead}{}{lortehoved}{}
+\slangw{stfu}{shut the fuck up}{hdfk}{hold din fede kæft}
+\slangw{tbh}{to be honest}{fvæ}{for at være ærlig}
+\slangw{tfw}{that feeling when}{ddfn}{den der følelse når}
+\slangw{til}{today I learned}{idlj}{i dag lærte jeg}
+\slangw{ty}{thank you}{t}{tak}
+\slangw{tyvm}{thank you very much}{mt}{mange tak}
+\slangw{wtf}{what the fuck}{hk}{hvad ved knepperiet}
+\slangw{yolo}{you only live once}{dlkeg}{du lever kun én gang}
+\slangw{yw}{you're welcome}{dv}{du er velkommen}
+\end{slang}
+
+
+\end{document}
