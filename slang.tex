@@ -1,6 +1,6 @@
 \documentclass[a5paper,10pt]{book}
 
-\usepackage[T1]{fontenc}
+\usepackage[LGR,T1]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage[a5paper]{geometry}
 \usepackage{fancyhdr}
@@ -33,6 +33,8 @@
 \newcommand{\slangw}[4]{%
 \noindent \textbf{#1 \ifthenelse{\equal{#2}{}}{}{ (#2)}} \enspace #3 \ifthenelse{\equal{#4}{}}{}{ (#4)} \\
 }
+
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 
 
 
@@ -225,6 +227,7 @@ Book design, Danish \& Espe\-ranto & Jonatan Nordentoft
 
 
 \chapter{English to French}
+\begin{slang}
 \slangw{afaik}{as far as I know}{àmc}{à ma connaissance}
 \slangw{afk}{away from keyboard}{ldmc}{loin de mon clavier}
 \slangw{asshat}{}{chapeau de cul}{}
@@ -246,7 +249,7 @@ Book design, Danish \& Espe\-ranto & Jonatan Nordentoft
 \slangw{hbd}{happy birthday}{ba}{bon anniversaire}
 \slangw{I'm fucked}{}{je vais m'étaler}{}
 \slangw{idek}{I don't even know}{jnspm}{je ne sais pas même}
-\slangw{idk}{I don't know}{jnsp}{je ne sais pas}\vfill
+\slangw{idk}{I don't know}{jnsp}{je ne sais pas}
 \slangw{iirc}{if I recall correctly}{sjmsc}{si je me souviens correctement}
 \slangw{ikr}{I know, right}{jsàd}{je sais à droit}
 \slangw{imho}{in my honest opinion}{àmah}{à mon avis honêt}
@@ -254,7 +257,7 @@ Book design, Danish \& Espe\-ranto & Jonatan Nordentoft
 \slangw{jk}{just kidding}{cnequb}{Ce n'était qu'une blague}
 \slangw{lmao}{laughing my ass off}{erjpmc}{en riant je perds mon cul}
 \slangw{lmfao}{laughing my fucking ass off}{erjpmcb}{en riant je perds mon cul baisant}
-\slangw{lol}{laughing out loud}{mdr}{mort de rire}
+\slangw{lol}{laughing out loud}{mdr}{mort de rire}\vfill
 \slangw{np}{no problem}{pdp}{pas de problème}
 \slangw{nvm}{nevermind}{pdp}{pas de problème}
 \slangw{omfg}{oh my fucking God}{omdb}{Oh mon dieu baisant}
@@ -277,6 +280,64 @@ Book design, Danish \& Espe\-ranto & Jonatan Nordentoft
 \slangw{wtf}{what the fuck}{qlb}{quoi la baise}
 \slangw{yolo}{you only live once}{onvquf}{on ne vit qu'un fois}
 \slangw{yw}{you're welcome}{dr}{de rien}
+\end{slang}
+
+
+\chapter{English to Greek}
+\begin{slang}
+\slangw{afaik}{as far as I know}{aok}{\textgreek{Απ' όσο ξέρω}}
+\slangw{afk}{away from keyboard}{matpl}{\textgreek{μακριά από το πληκτρολόγιο}}
+\slangw{asshat}{}{\textgreek{κωλοκαπέλο}}{}
+\slangw{atm}{at the moment}{ats}{\textgreek{αυτή τη στιγμή}}
+\slangw{bbl}{be back later}{ea}{\textgreek{έρχομαι αργότερα}}
+\slangw{brb}{be right back}{esl}{\textgreek{έρχομαι σε λίγο}}
+\slangw{btw}{by the way}{prpts}{\textgreek{παρεπιμπτόντως}}
+\slangw{cba}{can't be arsed}{dpntk}{\textgreek{δεν παίζει να το κάνω}}
+\slangw{dank memes}{}{\textgreek{Ξεπερασμένο}}{}
+\slangw{ffs}{for fucks sake}{ghtg}{\textgreek{για χάρη του γαμώτου}}
+\slangw{fml}{fuck my life}{gtzm}{\textgreek{γαμώ τη ζωή μου}}
+\slangw{ftw}{for the win}{gtn}{\textgreek{για τη νίκη!}}
+\slangw{ftw}{fuck the world}{gtsn}{\textgreek{Γαμώ το σύμπαν}}
+\slangw{fuck}{}{\textgreek{Γαμώτο}}{}
+\slangw{fwiw}{for what it's worth}{atnks}{\textgreek{ό,τι αξίζει}}
+\slangw{fyi}{for your information}{atnks}{\textgreek{Αν θες να ξέρεις}}
+\slangw{gg}{good game}{kp}{\textgreek{Καλό παιχνίδι}}
+\slangw{gtg}{got to go}{prpnfg}{\textgreek{Πρέπει να φύγω}}
+\slangw{hbd}{happy birthday}{hrnpl}{\textgreek{Χρόνια πολλά}}
+\slangw{I'm fucked}{}{\textgreek{Τη γάμησα}}{}
+\slangw{idek}{I don't even know}{dnei}{\textgreek{Δεν έχω ιδέα}}
+\slangw{idk}{I don't know}{dnksr}{\textgreek{Δεν ξέρω}}
+\slangw{iirc}{if I recall correctly}{antmkl}{\textgreek{Αν θυμάμαι καλά}}
+\slangw{ikr}{I know, right}{ish}{\textgreek{Ισχύει}}
+\slangw{imho}{in my honest opinion}{gnii}{\textgreek{Για να είμαι ειλικρινής}}
+\slangw{imo}{in my opinion}{prpk}{\textgreek{Προσωπικά}}
+\slangw{jk}{just kidding}{plkn}{\textgreek{Πλάκα κάνω}}
+\slangw{lmao}{laughing my ass off}{psg}{\textgreek{Πεθαίνω στο γέλιο}}
+\slangw{lmfao}{laughing my fucking ass off}{klnsgl}{\textgreek{Κλάνω στο γέλιο}}
+\slangw{lol}{laughing out loud}{sksgl}{\textgreek{Σκάω στα γέλια}}
+\slangw{np}{no problem}{knpr}{\textgreek{Κανένα πρόβλημα}}\vfill
+\slangw{nvm}{nevermind}{dnprz}{\textgreek{Δεν πειράζει}}
+\slangw{omfg}{oh my fucking God}{gtthm}{\textgreek{Ω γαμώ το θεό μου}}
+\slangw{omg}{oh my God}{othm}{\textgreek{Ω θεέ μου}}
+\slangw{omgwtfbbq}{oh my god what the fuck barbecue}{othmtskbrq}{\textgreek{Ω θεέ μου τι σκατά barbeque}}
+\slangw{rn}{right now}{atts}{\textgreek{Αυτή τη στιγμή}}
+\slangw{rofl}{rolling on the floor laughing}{pftspatg}{\textgreek{Πέφτω στο πάτωμα από τα γέλια}}
+\slangw{roflcopter}{rolling on the floor laughing-copter}{pftspatge}{\textgreek{Πέφτω στο πάτωμα από τα γέλια- ελικόπτερο}}
+\slangw{roflmao}{rolling on the floor laughing my ass off}{klatg}{\textgreek{Κλαίω από τα γέλια}}
+\slangw{shithead}{}{\textgreek{Σκατοκέφαλος}}{}
+\slangw{stfu}{shut the fuck up}{vts}{\textgreek{Βγάλε το σκασμό}}
+\slangw{tbh}{to be honest}{gnii}{\textgreek{Για να είμαι ειλικρινής}}
+\slangw{tfw}{that feeling when}{tso}{\textgreek{To συναίσθημα όταν}}
+\slangw{the shit}{}{\textgreek{το σκατό}}{}
+\slangw{til}{today I learned}{se}{\textgreek{Σήμερα έμαθα}}
+\slangw{tl;dr}{too long; didn't read}{pm/dtd}{\textgreek{Πολύ μεγάλο/ δεν το διάβασα}}
+\slangw{ty}{thank you}{eh}{\textgreek{Ευχαριστώ}}
+\slangw{tyvm}{thank you very much}{ehp}{\textgreek{Ευχαριστώ πολύ}}
+\slangw{wip}{work in progress}{ieg}{\textgreek{Υπό επεξεργασία}}
+\slangw{wtf}{what the fuck}{td}{\textgreek{Τι διάολο}}
+\slangw{yolo}{you only live once}{zmmf}{\textgreek{Ζεις μόνο μία φορά}}
+\slangw{yw}{you're welcome}{pk}{\textgreek{Παρακαλώ}}
+\end{slang}
 
 
 \end{document}
